@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Dough</string>
+    <string name="pata_dough">Pata Dough</string>
+    <string name="description">description</string>
+    <string name="instant_cash">Instant Cash</string>
+    <string name="moses_kimani">Moses Kimani</string>
+    <string name="kimani_moses">kimani_moses</string>
+    <string name="available_balance">Available Balance</string>
+    <string name="ksh_2000">Ksh 2000</string>
+    <string name="amount_due">Amount Due</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="active">Active</string>
+    <string name="loan_status">Loan Status</string>
+    <string name="update">Update</string>
+    <string name="_25471234567">+25471234567</string>
+    <string name="forgot_password">Forgot Password?</string>
+</resources>

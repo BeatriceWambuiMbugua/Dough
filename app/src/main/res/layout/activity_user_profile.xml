@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:id="@+id/userprofile"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="20dp"
+        android:background="#26aa86">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/userprofile" />
+
+        <TextView
+            android:id="@+id/fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@id/profile_image"
+            android:layout_toRightOf="@id/profile_image"
+            android:fontFamily="@font/bungee"
+            android:text="@string/moses_kimani"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:includeFontPadding="false"/>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/fullname"
+            android:layout_toRightOf="@id/profile_image"
+            android:fontFamily="@font/antic_slab"
+            android:text="@string/kimani_moses"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:includeFontPadding="false"
+            android:layout_toEndOf="@id/profile_image" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="-90dp">
+        
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="125dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="#AA264A"
+            app:cardElevation="10dp">
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+                <ImageView
+                    android:id="@+id/wallet"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/wallet"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:id="@+id/walletcash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ksh_2000"
+                    android:textSize="20sp"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/bungee"
+                    android:textColor="@color/black"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:id="@+id/wallet_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/available_balance"
+                    android:layout_below="@id/walletcash"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/antic_slab"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:includeFontPadding="false"
+                    android:layout_centerInParent="true"/>
+
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="125dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="#AA264A"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+                <ImageView
+                    android:id="@+id/balance"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/balance"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:id="@+id/cash_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ksh 20,000"
+                    android:textSize="20sp"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/bungee"
+                    android:textColor="@color/black"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:id="@+id/balance_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/amount_due"
+                    android:layout_below="@id/cash_balance"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/antic_slab"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:includeFontPadding="false"
+                    android:layout_centerInParent="true"/>
+
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/full_name"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawablePadding="10dp"
+                android:text="@string/moses_kimani"
+                android:fontFamily="@font/antic_slab"
+                android:id="@+id/fullnameinput"
+                android:drawableLeft="@drawable/small_user_icon"
+                android:textStyle="bold"/>
+
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawablePadding="10dp"
+                android:text="moseskimani@gmail.com"
+                android:fontFamily="@font/antic_slab"
+                android:drawableLeft="@drawable/email"
+                android:textStyle="bold"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone_number"
+                android:layout_marginBottom="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="10dp"
+                    android:text="@string/_25471234567"
+                    android:fontFamily="@font/antic_slab"
+                    android:id="@+id/phonenumber"
+                    android:drawableLeft="@drawable/phone_call"
+                    android:textStyle="bold"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/loan_status"
+                android:layout_marginBottom="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="10dp"
+                    android:text="@string/active"
+                    android:fontFamily="@font/antic_slab"
+                    android:id="@+id/loanstatus"
+                    android:drawableLeft="@drawable/status"
+                    android:textStyle="bold"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/update"
+            android:fontFamily="@font/bungee"
+            android:textColor="@color/black"
+            android:backgroundTint="#26aa86"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
