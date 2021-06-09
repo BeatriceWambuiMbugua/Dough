@@ -32,6 +32,7 @@
         android:layout_height="wrap_content"
         android:text="Sign In to Continue"
         android:textSize="18sp"
+        android:transitionName="sloganname"
         android:fontFamily="@font/antic_slab"/>
 
     <LinearLayout
@@ -46,6 +47,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/username"
             android:hint="Username"
+            android:transitionName="username"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_marginBottom="20dp">
 
@@ -59,6 +61,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/password"
             android:hint="Password"
+            android:transitionName="password"
             app:passwordToggleEnabled="true"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
 
@@ -83,15 +86,18 @@
 
 
         <Button
+            android:id="@+id/login_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="GO"
             android:backgroundTint="@color/black"
             android:textColor="@color/white"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"/>
+            android:layout_marginBottom="5dp"
+            android:transitionName="button_tran"/>
 
         <Button
+            android:id="@+id/signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#00000000"
@@ -101,7 +107,8 @@
             android:elevation="0dp"
             android:fontFamily="@font/antic_slab"
             android:textStyle="bold"
-            android:layout_margin="5dp"/>
+            android:layout_margin="5dp"
+            android:transitionName="login_signup_tran"/>
 
 
     </LinearLayout>
