@@ -115,6 +115,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/login_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="GO"
@@ -124,6 +125,7 @@
         android:transitionName="button_tran"/>
 
     <Button
+        android:id="@+id/signin_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Already a registered user? Log In"
